@@ -40,3 +40,4 @@ lerna-debug.log*
 # Environments
 .env
 .env.*
+!.env.template

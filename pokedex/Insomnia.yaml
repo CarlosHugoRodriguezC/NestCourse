@@ -1,14 +1,14 @@
 _type: export
 __export_format: 4
-__export_date: 2022-11-20T05:04:46.273Z
+__export_date: 2022-11-20T06:29:05.480Z
 __export_source: insomnia.desktop.app:v2022.6.0
 resources:
   - _id: req_358fce91616a45e495129673427ae1b2
     parentId: wrk_f4c04bcb738742dda09ce4508560012b
-    modified: 1668912942672
+    modified: 1668922381192
     created: 1668912929871
     url: http://localhost:3000/api/v2/seed
-    name: New Request
+    name: seed
     description: ""
     method: GET
     body: {}
@@ -84,9 +84,9 @@ resources:
     _type: request
   - _id: req_d6b2d4bc86f64cbd95005185b0e75425
     parentId: wrk_f4c04bcb738742dda09ce4508560012b
-    modified: 1668920637915
+    modified: 1668922994705
     created: 1668919464044
-    url: http://localhost:3000/api/v2/pokemon?offset=10&limit=10
+    url: http://localhost:3000/api/v2/pokemon?offset=10
     name: retrieve all pokemons with pagination
     description: ""
     method: GET

@@ -7,38 +7,50 @@
 1. Clonar repositorio
 2. Ejecutar
 
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
 3. Tener **Nest CLI** instalado
 
-```
-npm i -g @nestjs/cli
-```
+   ```
+   npm i -g @nestjs/cli
+   ```
 
 4. Levantar la base de datos
 
-```
-docker-compose up -d
-```
+   ```
+   docker-compose up -d
+   ```
 
-5. Levantar la aplicación
+5. Clonar el archivo `.env.template` y renombrar la copia a `.env`
+6. Llenar las variables de entorno definidas en el `.env`
 
-```
-npm run start:dev
-```
+7. Levantar la aplicación
 
-6. Reconstruir la base de datos [Seed](http://localhost:3000/api/v2/seed)
+   ```
+   npm run start:dev
+   ```
 
-```
-http://localhost:3000/api/v2/seed
-```
+8. Reconstruir la base de datos [Seed](http://localhost:3000/api/v2/seed)
 
-Extra: Importar el archivo de coleccion http de Insominia **Insomnia.yaml**
+   ```
+   http://localhost:3000/api/v2/seed
+   ```
+
+Extra: Importar el archivo de coleccion http de Insominia `Insomnia.yaml`
 
 ## Stack usado
 
 - MongoDB
 - NestJS]
 - Docker
+
+## Production Build
+
+1. Crear el archivo `.env.prod`
+2. Llenar las variables de entorno de producción
+3. Crear la nueva imagen
+   ```
+   docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+   ```
