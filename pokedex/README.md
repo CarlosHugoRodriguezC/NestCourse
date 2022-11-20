@@ -6,20 +6,39 @@
 
 1. Clonar repositorio
 2. Ejecutar
+
 ```
 npm install
 ```
-3. Tener __Nest CLI__ instalado
+
+3. Tener **Nest CLI** instalado
+
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Levantar la base de datos
+
 ```
 docker-compose up -d
 ```
-5. Importar el archivo de coleccion http de Insominia __Insomnia.yaml__ 
+
+5. Levantar la aplicación
+
+```
+npm run start:dev
+```
+
+6. Reconstruir la base de datos [Seed](http://localhost:3000/api/v2/seed)
+
+```
+http://localhost:3000/api/v2/seed
+```
+
+Extra: Importar el archivo de coleccion http de Insominia **Insomnia.yaml**
 
 ## Stack usado
-* MongoDB
-* NestJS]
-* Docker
+
+- MongoDB
+- NestJS]
+- Docker
