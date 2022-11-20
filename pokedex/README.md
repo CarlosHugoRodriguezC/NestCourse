@@ -17,6 +17,7 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Importar el archivo de coleccion http de Insominia __Insomnia.yaml__ 
 
 ## Stack usado
 * MongoDB
