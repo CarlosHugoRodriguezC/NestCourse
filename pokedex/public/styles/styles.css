@@ -1,0 +1,14 @@
+
+body {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: gray;
+    min-height: 100vh
+}
+
+h1 {
+    font-size: 20rem;
+    color: white;
+    
+}
