@@ -1,0 +1,139 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-20T02:15:08.355Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_c8ba868f145f4ce89f03598081e2aa12
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668909605166
+    created: 1668901378340
+    url: http://localhost:3000/api/v2/pokemon
+    name: create new pokemon
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"no": 2,
+        	"name": "Charmander"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1668901378340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_f4c04bcb738742dda09ce4508560012b
+    parentId: null
+    modified: 1668895738510
+    created: 1668895738510
+    name: pokedex nestjs
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_23153c679e384e97aff5716d8fa15281
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668901390413
+    created: 1668897232909
+    url: http://localhost:3000/api/v2/pokemon
+    name: retrieve all pokemons
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1668897232909
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b6a6b76201944c819e9a3d39cd12a2cf
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668909395806
+    created: 1668908930106
+    url: http://localhost:3000/api/v2/pokemon/bulbasau
+    name: retrieve a pokemon
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1668652990854
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee519fcdd3944775b855ad1fad8f7bf2
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668910186962
+    created: 1668909590058
+    url: http://localhost:3000/api/v2/pokemon/3
+    name: update a pokemon
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"no": 1,
+        	"name": "Bulbasaur"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1668530869826.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b50ba8f647161bbc1692946b15b313e249cbc879
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668895738532
+    created: 1668895738533
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1668895738533
+    _type: environment
+  - _id: jar_b50ba8f647161bbc1692946b15b313e249cbc879
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668895738539
+    created: 1668895738539
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_0fcec4e25a254d1380190dea2dc1e880
+    parentId: wrk_f4c04bcb738742dda09ce4508560012b
+    modified: 1668895738519
+    created: 1668895738519
+    fileName: pokedex nestjs
+    contents: ""
+    contentType: yaml
+    _type: api_spec
