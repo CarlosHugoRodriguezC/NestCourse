@@ -1,6 +1,7 @@
 # compiled output
 /dist
 /node_modules
+/.yarn
 
 # Logs
 logs
@@ -37,3 +38,7 @@ lerna-debug.log*
 
 # docker volumes
 postgres/
+
+# static files uploads
+static/uploads/
+public/
