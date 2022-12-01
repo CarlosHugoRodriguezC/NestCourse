@@ -11,11 +11,19 @@ interface SeedProduct {
   gender: 'men' | 'women' | 'kid' | 'unisex';
 }
 
+interface SeedUser {
+  email: string;
+  password: string;
+  fullName: string;
+  role: string[];
+}
+
 type ValidSizes = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL';
 type ValidTypes = 'shirts' | 'pants' | 'hoodies' | 'hats';
 
 interface SeedData {
   products: SeedProduct[];
+  users: SeedUser[];
 }
 
 export const initialData: SeedData = {
@@ -699,4 +707,18 @@ export const initialData: SeedData = {
       gender: 'kid',
     },
   ],
+  users: [
+    {
+      email: 'test1@mail.com',
+      fullName: 'Test One',
+      password: 'Abc123',
+      role: ['admin']
+    },
+    {
+      email: 'test2@mail.com',
+      fullName: 'Test Two',
+      password: 'Abc123',
+      role: ['user', 'super-user']
+    }
+  ]
 };
