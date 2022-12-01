@@ -21,4 +21,4 @@
    ```
    yarn start:dev
    ```
-8. Abrir la documentación en el navegador [documantacion](http://localhost:3000/api)
+8. Abrir la documentación en el navegador [documantación](http://localhost:3000/api)
